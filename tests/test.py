@@ -3,6 +3,6 @@ from tests.ss2022 import CSVPrinter
 
 class TestCSVPrinter(unittest.TestCase):
     def test_read(self):
-        printer = CSVPrinter("tests.sample.csv")
+        printer = CSVPrinter("tests/sample.csv")
         l = printer.read()
         self.asserEqual(2, len(l))
